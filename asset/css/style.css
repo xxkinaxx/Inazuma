@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: Lucida Grande;
+    cursor: default;
+}
+a {
+    text-decoration: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+header {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    color: white;
+    z-index: 10;
+}
+.container li{
+    float: right;
+    margin: 0 20px;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 17px 0;
+}
+.header-right{
+    padding-top: 7px;
+    margin-right: -60px;
+    margin-top: 25px;
+}
+.header-left{
+    margin-top: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: -100px;
+}
+.navbar-item a{
+    font-size: 1em;
+    background-color: rgba(44, 79, 86, 0.9);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 15px;
+    color: white;
+}
+.navbar-item:hover a{
+    background-color: rgba(43, 71, 75, 0.9);
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container li{
+    list-style: none;
+}
+.logo-img{
+    width: 70px;
+    margin-top: -12px;
+    margin-right: -30px;
+}
+.electro-logo img{
+    width: 70px;
+    height: 70px;
+    margin-top: -27px;
+}
+.toggle{
+    list-style-type: none;
+    display: none;
+    margin: 0 20px;
+}
+/* @media */
+@media screen and (max-width:768px){
+    .toggle{
+        display: block;
+    }
+    header{
+        width: 768px;
+    }
+    .container{
+        width: 680px;
+    }
+    .navbar-item{
+        display: none;
+        text-align: right;
+        width: 30%;
+        justify-content: center;
+        margin-left: auto;
+    }
+    .active{
+        display: block;
+    }
+    .navbar-link{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20%;
+    }
+    .top-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containers{
+        margin: auto;
+        text-align: center;
+    }
+}
+/* TITLE */
+.containers {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 0 0 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    color: black;
+}
+.top-wrapper {
+    padding: 150px 20px 100px 20px;
+    background-image: url(https://d1lss44hh2trtw.cloudfront.net/assets/article/2021/07/09/genshin-impact-version-20-coming-late-july-with-new-inazuma-area-cross-progression_feature.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -25px;
+}
+.top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+.images img{
+    width: 450px;
+    border-radius: 50px;
+    background-color: rgba(255, 253, 253, 0.8);
+}
+.explore-button{
+    background-color: rgba(192, 115, 247, 0.8);
+    border-radius: 10px;
+    padding: 20px 50px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 20px 10px 20px;
+    border: none;
+}
+.explore-button a{
+    color: white;
+}
+.explore-button:hover{
+    background-color: rgba(95, 52, 156, 0.8);
+}
+/* COLLECTION */
+.collection{
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    border: 20px double rgba(204, 72, 240, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0;
+}
+.collection h2{
+    color: black;
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+.blink{
+    animation: blinker 2s linear infinite;
+}
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+/* Character List */
+.character-wrapper{
+    height: 3300px;
+    background-color: azure;
+    text-align: center;
+    margin-bottom: -20px;
+    padding-top: 50px;
+}
+.Character-lists{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.Character-data:hover{
+    box-shadow: 5px 5px 5px rgba(87, 147, 159, 0.9);
+}
+.Character-data img{
+    width: 200px;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+}
+[class^="Character-data"]{
+    width: 25%;
+    column-gap: 50px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 0;
+}
+.Character-data:hover img{
+    transform: scale(1.2);
+}
+.data-img{
+    overflow: hidden;
+}
+.data{
+    background-color: rgba(173, 120, 199, 0.5);
+    border-radius: 25px;
+    padding: 1px 0 15px 0;
+    margin: 0 10px;
+}
+.card-button{
+    background-color: darkorchid;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 0;
+}
+.card-button a{
+    color: white;
+}
+.card-button:hover{
+    background-color: rgb(81, 31, 107);
+    box-shadow: 0 0 10px rgb(168, 35, 168);
+}
+/* aside */
+aside{
+    background-color: azure;
+    justify-content: center;
+    display: flex;
+}
+.biography-card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px rgb(106, 114, 114);
+}
+.biography-card:hover{
+    box-shadow: 5px 5px rgb(74, 79, 79);
+}
+.profile-img{
+    border-radius: 10px 10px 0 0;
+}
+.biography-card{
+    color: black;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+.contact{
+    margin: 20px 10px;
+}
+.social-media{
+    padding: 0 5px;
+}
+/* footer */
+footer{
+    height: 150px;
+    background-color: rgba(34, 49, 52, 0.9);
+}
+.footer-left img{
+    float: left;
+}
+.footer-left p{
+    float: right;
+    margin-right: 30px;
+}
+.genshin-logo{
+    width: 100px;
+    margin-top: 25px;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+.genshin-title{
+    width: 150px;
+}
