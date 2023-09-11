@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Lucida Grande;
     cursor: default;
+    background-color: azure;
 }
 a {
     text-decoration: none;
@@ -20,25 +21,33 @@ header {
     z-index: 10;
 }
 .container li{
-    float: right;
     margin: 0 20px;
+    list-style: none;
 }
 .container{
     display: flex;
     justify-content: flex-end;
     padding: 17px 0;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
 }
 .header-right{
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
     padding-top: 7px;
-    margin-right: -60px;
     margin-top: 25px;
 }
 .header-left{
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
     margin-top: 20px;
     font-size: 2em;
     cursor: pointer;
     margin-right: auto;
-    margin-left: -100px;
+    margin-left: -50px;
 }
 .navbar-item a{
     font-size: 1em;
@@ -50,14 +59,6 @@ header {
 }
 .navbar-item:hover a{
     background-color: rgba(43, 71, 75, 0.9);
-}
-.container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.container li{
-    list-style: none;
 }
 .logo-img{
     width: 70px;
@@ -73,46 +74,53 @@ header {
     list-style-type: none;
     display: none;
     margin: 0 20px;
+    margin-top: -10px;
 }
 /* @media */
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
     .toggle{
         display: block;
     }
     header{
-        width: 768px;
+        width: 100%;
     }
     .container{
-        width: 680px;
+        width: 100%;
     }
     .navbar-item{
         display: none;
         text-align: right;
-        width: 30%;
-        justify-content: center;
-        margin-left: auto;
+        flex-direction: column;
+    }
+    .header-right{
+        flex-wrap: wrap;
     }
     .active{
         display: block;
     }
-    .navbar-link{
-        display: flex;
-        flex-wrap: wrap;
-        width: 20%;
-    }
     .top-wrapper{
-        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .containers{
-        margin: auto;
         text-align: center;
+    }
+    .character-wrapper{
+        height: 3500px;
+    }
+    aside{
+        margin-top: 150px;
+    }
+    .biography-card{
+        height: 600px;
+    }
+    .data-img{
+        width: 100%;
     }
 }
 /* TITLE */
 .containers {
-    width: 100%;
     padding: 0 15px;
     margin: 0 0 0 20px;
     background-color: rgba(255, 255, 255, 0.8);
