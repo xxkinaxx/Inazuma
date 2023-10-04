@@ -212,7 +212,7 @@ header {
     border-radius: 15px;
     transition: 0.5s ease-in-out;
 }
-[class^="Character-data"]{
+.Character-data{
     width: 25%;
     column-gap: 50px;
     background-color: white;
